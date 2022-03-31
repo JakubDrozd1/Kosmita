@@ -1,0 +1,14 @@
+﻿<Window x:Class="bb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bb"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtWys" HorizontalAlignment="Left" Height="121" Margin="277,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="259" Background="#FFF39191"/>
+        <Button x:Name="btnKlik" Content="Klik" HorizontalAlignment="Left" Margin="365,246,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.024,-0.412" Click="btnKlik_Click"/>
+
+    </Grid>
+</Window>
