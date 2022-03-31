@@ -35,17 +35,29 @@ namespace bb
         }
     }
 
-    class Wąż : Istota
+    public class Wąż /*: Istota*/
     {
-        public string długość;
+        public int a;
+        public int b;
 
-        public Wąż():base("Wąż")
+        public string długość;
+        public Wąż(int a1)
         {
-            długość = "Siema";
+            this.a = a1;
+            
         }
-        public override string Inne()
+
+        //public Wąż():base("Wąż")
+        //{
+        //    długość = "Siema";
+        //}
+        //public override string Inne()
+        //{
+        //    return długość;
+        //}
+        public static Wąż operator+(Wąż a2, Wąż b2)
         {
-            return długość;
+            return new Wąż(a2.a + b2.a);
         }
 
     }
