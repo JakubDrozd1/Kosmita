@@ -49,7 +49,12 @@ namespace bb
 
         //public Wąż():base("Wąż")
         //{
-        //    długość = "Siema";
+        //    długość = 12.ToString();
+        //}
+
+        //public Wąż(string name) :base(name)
+        //{
+
         //}
         //public override string Inne()
         //{
