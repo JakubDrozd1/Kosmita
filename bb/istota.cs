@@ -8,10 +8,13 @@ namespace bb
 {
     abstract class Istota
     {
-        public string Opis;
+        public string Opis { get; }
         public abstract string Inne();
        
-
+        public Istota(string opis)
+        {
+            Opis = opis;
+        }
         public virtual string Wyswietl()
         {
             return Opis + Inne();
@@ -20,28 +23,25 @@ namespace bb
 
     class Kosmita : Istota
     {
-
         public string oko;
 
-        public Kosmita(string o)
+        public Kosmita():base("Kosmita")
         {
-            oko = o;
+            oko = "Siema";
         }
         public override string Inne()
         {
             return oko;
         }
-
-
-
     }
+
     class Wąż : Istota
     {
         public string długość;
 
-        public Wąż(string d)
+        public Wąż():base("Wąż")
         {
-            długość = d;
+            długość = "Siema";
         }
         public override string Inne()
         {

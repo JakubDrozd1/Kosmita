@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace bb
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Interaction logic for jd.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class jd : Window
     {
-
-        public MainWindow()
+        public jd()
         {
             InitializeComponent();
-        }
-
-        private void btnKlik_Click(object sender, RoutedEventArgs e)
-        {
-            Kosmita k = new Kosmita() { };
-            Wąż w = new Wąż() { };
-            MessageBox.Show($@" {k.Wyswietl()}  
-{w.Wyswietl()}");
         }
     }
 }
